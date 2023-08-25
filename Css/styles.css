@@ -55,7 +55,7 @@ body{
 /* header */
 #header{
     display: flex;
-    background-color: black;
+    background-color:#000;
     justify-content: space-between;
     padding:5px;
 }
@@ -70,14 +70,12 @@ body{
 }
 .top{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
 }
-#batting{
-    flex: 1;
-}
-#balling{
-    flex: 1;
+#vs{
+    font-size: larger;
+    color:#000;
+    font-weight: bolder;
 }
 /* scorecard */
 #scorecard{
@@ -103,7 +101,16 @@ body{
     min-width: 33vw;
     height: 10vh;
     flex: 1;
+    /* background-color:rgb(11,102,35);
+    color:#fff;
+    color:#01b636;
+    font-weight: bold;
+    font-size:x-large;
+    border-color: #fff; */
 }
+/* #runs .run .button:hover{
+    background-color: rgb(80,220,100);
+} */
 /* footer */
 /* footer{
     text-align: center;
