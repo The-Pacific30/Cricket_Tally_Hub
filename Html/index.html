@@ -6,8 +6,7 @@
     <title>Score Card</title>
     <link rel="stylesheet" href="../Css/styles.css">
     <script src="../JavaScript/script.js"></script>
-    <script src="../JavaScript/bye.js"></script>
-    <script src="../JavaScript/legbye.js"></script>
+        <script src="../JavaScript/legbye.js"></script>
     <script src="../JavaScript/noball.js" ></script>
     <script src="../JavaScript/inning.js"></script>
     <script src="../JavaScript/declare.js"></script>
@@ -18,19 +17,15 @@
     <header id="header">
         <a ><input type="button" id="undo" onclick="Undo()" value="Undo" class="button" ></a>
         <h1>SCORECARD</h1>
-        <!-- <a href="../Html/declare.html"><input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" ></a> -->
         <input type="button" id="inning" onclick="inning()" value="inning" class="button" >
     </header>
     <main>
-        <div class="top">
-            <div id="batting"></div>
+        <div id="top">
+            <div id="batting1"><div><h4>Batting Team </h4></div><div id="batting"></div></div>
             <div id="vs">V/S</div>
-            <div id="balling"></div>
+            <div id="balling1"><div><h4>Bowling Team </h4></div><div id="balling"></div></div>
         </div>
             <section id="scorecard">
-                <div class="userimage">
-                    <img src="../Images/user.png" alt="img" width="100px">
-                </div>
                 <div class="score">
                     Total Score - <span class="total-clickRuns"></span> / <span class="total-clickWickets"></span>
                 </div>
@@ -51,7 +46,6 @@
                 <input type="button" id="noBall" onclick="noBallClick()" value="NB" class="button" >
                 <input type="button" id="wickets" onclick="wicketClick()" value="OUT" class="button" >
                 <input type="button" id="legbye" onclick="lbClick()" value="B/LB" class="button" >
-                <!-- <input type="button" id="inning" onclick="inning()" value="inning" class="button" > -->
             </div>
         </section>
     </main>

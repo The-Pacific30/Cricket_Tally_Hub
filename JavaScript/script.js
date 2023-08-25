@@ -171,12 +171,13 @@ document.addEventListener('DOMContentLoaded', () => {
 const batting = document.getElementById("batting");
 const storedHostName = localStorage.getItem("hostname");
 if (storedHostName) {
-    batting.textContent = "Batting  : " + storedHostName;
+    batting.textContent =  storedHostName;
 }
 
 const balling = document.getElementById("balling");
 const storedVistorName = localStorage.getItem("visitorname");
 if(storedVistorName) {
-   balling.textContent = "Bowling  : " + storedVistorName;
+   balling.textContent =  storedVistorName;
 }});
+
 
