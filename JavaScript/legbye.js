@@ -22,12 +22,10 @@ function lbClick()
         break;
         default :
         alert("Enter valid runs")
-        // clickBall = clickBall-1
         clickOvers = clickOvers-0.1
         
     }
     document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // ballClick()
     Overs()
     saveData()
     update()

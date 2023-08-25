@@ -24,30 +24,22 @@ function noBallClick()
         break;
         case 7: 
         clickRuns = clickRuns+1;
-        // clickBall = clickBall-1
         clickOvers = clickOvers-0.1
         noBallClick();
         break;
         case 9: 
         clickRuns = clickRuns+1;
-        // clickBall = clickBall-1
         clickOvers = clickOvers-0.1
         noBallClick();
         break;
         default :
-        // clickRuns=clickRuns+1;
         alert("Enter valid runs")
-        // clickBall = clickBall-1
         clickOvers = clickOvers-0.1
     
     }
     document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // ballClick()
     Overs()
     saveData()
     update()
 }}
-// const maxOver=localStorage.getItem('maxOver')
- // if(clickOvers == maxOver){
-    //     inning()
-    // }
+
