@@ -1,73 +1,121 @@
 let clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0, over=0
+const maxOver=localStorage.getItem('maxOver')
 function run0Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+0;
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 function run1Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+1;    
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10 ){
+    inning()
+    }
+    }
 }
 function run2Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+2;   
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 
 function run3Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+3;
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 
 function run4Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+4;
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 function run5Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+5;
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 
 function run6Click()
 {
+    if(clickOvers<=maxOver || clickWickets<10){
     clickRuns=clickRuns+6;
     // ballClick()
     clickBall=clickBall+1;
     Overs()
     saveData()
     update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
+    }
 }
 
+// function runClick(runValue) {
+//     if(clickOvers<=maxOver || clickWickets<10){
+//     clickRuns += runValue;
+//     Overs();
+//     saveData();
+//     update();
+//     if(clickOvers == maxOver|| clickWickets == 10){
+//         inning()
+//         }
+//      }
+// }
+
 function wideBallClick()
-{
+{ 
     clickRuns=clickRuns+1;
     saveData()
     update()
@@ -75,13 +123,16 @@ function wideBallClick()
 
 function wicketClick()
 {
-    if(clickWickets<10){
+    if(clickOvers<=maxOver || clickWickets<10){
         clickWickets=clickWickets+1;
         // ballClick()
         clickBall=clickBall+1;
         Overs()
         saveData()
         update()
+    if(clickOvers == maxOver|| clickWickets == 10){
+        inning()
+    }
     }
 }
 
