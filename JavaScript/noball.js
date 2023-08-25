@@ -1,5 +1,6 @@
 function noBallClick()
 {
+    if(clickOvers<=maxOver && clickWickets<10){
     var bye = prompt("This is no ball if the free hit si no ball then press 9 or if wide enter 7 " , "Enter the run for free hit")
     switch(parseInt(bye))
     {
@@ -40,5 +41,8 @@ function noBallClick()
     Overs()
     saveData()
     update()
-
-}
+}}
+// const maxOver=localStorage.getItem('maxOver')
+ // if(clickOvers == maxOver){
+    //     inning()
+    // }
