@@ -41,7 +41,6 @@ function inning(){
         }
         window.location.href = 'declare.html'
         console.log("more score is ", maxScore)
-        // update1()
     }
 }
 

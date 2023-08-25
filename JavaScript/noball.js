@@ -42,7 +42,4 @@ function noBallClick()
     saveData()
     update()
 }}
-// const maxOver=localStorage.getItem('maxOver')
- // if(clickOvers == maxOver){
-    //     inning()
-    // }
+
