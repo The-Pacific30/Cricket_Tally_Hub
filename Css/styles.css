@@ -18,7 +18,7 @@ body{
     color: aliceblue;
     font-size:larger;
 }
-#header #undo,#header #declare{
+#header #undo,#header #inning{
     background-color: #fff;
     padding:2px;
     border-radius: 5px;
@@ -56,20 +56,4 @@ body{
     min-width: 33vw;
     height: 10vh;
     flex: 1;
-    /* background-color:rgb(11,102,35);
-    color:#fff;
-    color:#01b636;
-    font-weight: bold;
-    font-size:x-large;
-    border-color: #fff; */
 }
-/* footer */
-/* footer{
-    text-align: center;
-    background-color: rgb(53, 52, 52);
-    color:#fff;
-    padding:5px;
-    width:100vw;
-    bottom: 0;
-    position: fixed;
-} */

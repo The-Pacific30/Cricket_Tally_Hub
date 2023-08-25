@@ -25,6 +25,7 @@ function lbClick()
         clickOvers = clickOvers-0.1
         
     }
+    clickBall = clickBall + 1
     document.querySelector('.total-clickRuns').textContent = clickRuns;
     Overs()
     saveData()
