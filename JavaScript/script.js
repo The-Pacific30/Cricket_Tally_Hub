@@ -96,7 +96,28 @@ function run6Click()
 }
 function wideBallClick()
 { 
-    clickRuns=clickRuns+1;
+    var bye = prompt("Hello Umpire This is Wide Ball" , "1")
+    switch(parseInt(bye))
+    {
+        case 1: 
+        clickRuns = clickRuns+1;
+        break;
+        case 2: 
+        clickRuns = clickRuns+2;
+        break;
+        case 3: 
+        clickRuns = clickRuns+3;
+        break;
+        case 4: 
+        clickRuns = clickRuns+4;
+        break;
+        case 5: 
+        clickRuns = clickRuns+5;
+        break;
+        default :
+        alert("Enter valid runs")
+        clickOvers = clickOvers-0.1
+    }
     saveData()
     update()
 }

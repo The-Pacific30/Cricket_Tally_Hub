@@ -14,6 +14,7 @@ function inning(){
         if (storedVisitorName) {
             document.getElementById("balling").textContent = "bowling  : " + storedVisitorName;
         }
+        alert("First Inning is Completed")
         clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0,over=0
         document.querySelector('.total-clickRuns').textContent = clickRuns;
         document.querySelector('.total-clickWickets').textContent = clickWickets;
@@ -31,6 +32,13 @@ function inning(){
             localStorage.setItem("Wicket", firstWicket)
             const teamName = localStorage.getItem("hostname")
             localStorage.setItem("teamName",teamName)
+        }
+        else if(firstScore === secondScore){
+            maxScore = firstScore
+            localStorage.setItem("maxScore",firstScore)
+            localStorage.setItem("Wicket", firstWicket)
+            const teamName = localStorage.getItem("matchtied")
+            localStorage.setItem("teamName", teamName)
         }
         else{
             maxScore = secondScore

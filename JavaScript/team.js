@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const visitorteam = document.getElementById("visitorteam").value;
         localStorage.setItem('visitorname', visitorteam);
     });
+        const matchtied = "Match Tied";
+        localStorage.setItem('matchtied', matchtied);
     let maxOver = document.getElementById("maxOver");
     maxOver.addEventListener("input", () => {
         const maxOver = document.getElementById("maxOver").value;

@@ -2,7 +2,7 @@ function lbClick()
 {
     const maxOver = localStorage.getItem('maxOver')
     if(clickOvers<=maxOver && clickWickets<10){
-    var bye = prompt("Hello Umpire This is legbye" , "1")
+    var bye = prompt("Hello Umpire This is bye/legbye" , "1")
     switch(parseInt(bye))
     {
         case 0: 
