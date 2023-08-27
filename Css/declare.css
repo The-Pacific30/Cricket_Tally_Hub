@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     background-color: rgb(174, 255, 174);
-
 }
 #declareform{
     max-width: 60vw;
@@ -15,26 +14,21 @@
 #declareform .declareform div{
     display: flex;
     background-color: rgb(255, 255, 255);
-
 }
 #declareform .declareform h1{
     background-color: rgb(255, 255, 255);
-
 }
 #declareform .declareform{
     max-width: 70%;
     margin: auto;
     background-color: rgb(255, 255, 255);
-
 }
 #declareform .declareform div span{
     font-size:x-large;
     background-color: rgb(255, 255, 255);
-
 }
 #declareform .declareform .img img{
     align-items: center;
     margin: 0% 25%;
     background-color: rgb(255, 255, 255);
-
 }

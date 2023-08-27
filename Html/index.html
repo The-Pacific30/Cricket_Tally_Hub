@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Card</title>
+    <title>Scorecard-Cricket Tally Hub</title>
     <link rel="stylesheet" href="../Css/styles.css">
     <script src="../JavaScript/script.js"></script>
         <script src="../JavaScript/legbye.js"></script>
@@ -14,38 +14,39 @@
     <link rel="manifest" href="./manifest/manifest.json"/>
 </head>
 <body>
-    <header id="header">
-        <a ><input type="button" id="undo" onclick="Undo()" value="Undo" class="button" ></a>
+    <header id = "header">
+        <input type = "button" id = "undo" onclick = "Undo()" value = "Undo" class = "button" >
         <h1>SCORECARD</h1>
-        <input type="button" id="inning" onclick="inning()" value="inning" class="button" >
+        <input type = "button" id = "inning" onclick = "inning()" value = "inning" class = "button" >
     </header>
     <main>
-        <div id="top">
-            <div id="batting1"><div><h4>Batting Team </h4></div><div id="batting"></div></div>
-            <div id="vs">V/S</div>
-            <div id="balling1"><div><h4>Bowling Team </h4></div><div id="balling"></div></div>
+        <div id = "top">
+            <div id = "batting1">
+                <div><h4>Batting Team </h4></div><div id = "batting"></div></div>
+            <div id = "vs">V/S</div>
+            <div id = "balling1"><div><h4>Bowling Team </h4></div><div id = "balling"></div></div>
         </div>
-            <section id="scorecard">
-                <div class="score">
-                    Total Score - <span class="total-clickRuns"></span> / <span class="total-clickWickets"></span>
-                </div>
-                <div class="overs">
-                    Overs - <span class="total-overs"></span> / <span class="max-Over"></span>
-                </div>
-            </section>
-        <section id="runs">
-            <div class="run">
-                <input type="button" id="run0" onclick="run0Click()" value="0" class="button" >
-                <input type="button" id="run1" onclick="run1Click()" value="1" class="button" >
-                <input type="button" id="run2" onclick="run2Click()" value="2" class="button" >
-                <input type="button" id="run3" onclick="run3Click()" value="3" class="button" >
-                <input type="button" id="run4" onclick="run4Click()" value="4" class="button" >
-                <input type="button" id="run5" onclick="run5Click()" value="5" class="button" >
-                <input type="button" id="run6" onclick="run6Click()" value="6" class="button" >
-                <input type="button" id="whiteBall" onclick="wideBallClick()" value="WD" class="button" >
-                <input type="button" id="noBall" onclick="noBallClick()" value="NB" class="button" >
-                <input type="button" id="wickets" onclick="wicketClick()" value="OUT" class="button" >
-                <input type="button" id="legbye" onclick="lbClick()" value="B/LB" class="button" >
+        <section id = "scorecard">
+            <div class = "score">
+                Total Score - <span class = "total-clickRuns"></span> / <span class = "total-clickWickets"></span>
+            </div>
+            <div class = "overs">
+                Overs - <span class = "total-overs"></span> / <span class = "max-Over"></span>
+            </div>
+        </section>
+        <section id = "runs">
+            <div class = "run">
+                <input type = "button" id = "run0" onclick = "run0Click()" value = "0" class = "button" >
+                <input type = "button" id = "run1" onclick = "run1Click()" value = "1" class = "button" >
+                <input type = "button" id = "run2" onclick = "run2Click()" value = "2" class = "button" >
+                <input type = "button" id = "run3" onclick = "run3Click()" value = "3" class = "button" >
+                <input type = "button" id = "run4" onclick = "run4Click()" value = "4" class = "button" >
+                <input type = "button" id = "run5" onclick = "run5Click()" value = "5" class = "button" >
+                <input type = "button" id = "run6" onclick = "run6Click()" value = "6" class = "button" >
+                <input type = "button" id = "whiteBall" onclick = "wideBallClick()" value = "WD" class = "button" >
+                <input type = "button" id = "noBall" onclick = "noBallClick()" value = "NB" class = "button" >
+                <input type = "button" id = "wickets" onclick = "wicketClick()" value = "OUT" class = "button" >
+                <input type = "button" id = "legbye" onclick = "lbClick()" value = "B/LB" class = "button" >
             </div>
         </section>
     </main>
