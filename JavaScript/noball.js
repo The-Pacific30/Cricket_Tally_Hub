@@ -2,7 +2,7 @@ function noBallClick()
 {
     const maxOver = localStorage.getItem('maxOver')
     if(clickOvers <= maxOver && clickWickets < 10){
-    var noball = prompt("This is no ball if the free hit with no ball then press 9 or if wide enter 7 " , "Enter the run for free hit")
+    var noball = prompt("This is no ball if the free hit with no ball then enter 9 or if wide enter 7 " , "Enter the run for free hit")
     switch(parseInt(noball))
     {
         case 0: 

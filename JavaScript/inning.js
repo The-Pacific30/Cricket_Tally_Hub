@@ -1,19 +1,19 @@
 let firstScore = 0,secondScore = 0,maxScore = 0, firstWicket = 0, secondWicket = 0, team1 = 1, team2 = 2
 function inning(){
-    if(document.getElementById("inning").value === "inning"){
+    if(document.getElementById("inning").value === "Inning"){
         const previousState = history[history.length - 1]
         firstScore = previousState.clickRuns
         firstWicket = previousState.clickWickets
         console.log(firstScore)                                  //debugging
-        document.getElementById("inning").value = "endInning"
+        document.getElementById("inning").value = "End Inning"
         const storedHostName = localStorage.getItem("visitorname")
 
         if (storedHostName) {
-            document.getElementById("batting").textContent = "Batting  : " + storedHostName
+            document.getElementById("batting").textContent = storedHostName
         }
         const storedVisitorName = localStorage.getItem("hostname")
         if (storedVisitorName) {
-            document.getElementById("balling").textContent = "bowling  : " + storedVisitorName
+            document.getElementById("balling").textContent = storedVisitorName
         }
         alert("First Inning is Completed")
 
