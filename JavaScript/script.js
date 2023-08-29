@@ -84,7 +84,7 @@ function run5Click()
 function run6Click()
 {
     if(clickOvers <= maxOver || clickWickets < 10){
-    clickRuns =  + 6
+    clickRuns = clickRuns + 6
     clickBall = clickBall + 1
     Overs()
     saveData()
