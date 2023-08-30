@@ -20,6 +20,9 @@ function lbClick()
         case 4: 
         clickRuns = clickRuns + 4
         break
+        case 5: 
+        clickRuns = clickRuns + 5
+        break
         default :
         alert("Enter valid runs")
         clickOvers = clickOvers - 0.1

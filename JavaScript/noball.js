@@ -2,7 +2,7 @@ function noBallClick()
 {
     const maxOver = localStorage.getItem('maxOver')
     if(clickOvers <= maxOver && clickWickets < 10){
-    var noball = prompt("This is no ball if the free hit with no ball then press 9 or if wide enter 7 " , "Enter the run for free hit")
+    var noball = prompt("This is no ball Enter Run" , "1")
     switch(parseInt(noball))
     {
         case 0: 
@@ -20,18 +20,11 @@ function noBallClick()
         case 4: 
         clickRuns = clickRuns + 5
         break
+        case 5: 
+        clickRuns = clickRuns + 6
+        break
         case 6: 
         clickRuns = clickRuns + 7
-        break
-        case 7: 
-        clickRuns = clickRuns + 1
-        clickOvers = clickOvers - 0.1
-        noBallClick()
-        break
-        case 9: 
-        clickRuns = clickRuns + 1
-        clickOvers = clickOvers - 0.1
-        noBallClick()
         break
         default :
         alert("Enter valid runs")
@@ -39,7 +32,7 @@ function noBallClick()
     }
     clickBall = clickBall + 1
     document.querySelector('.total-clickRuns').textContent = clickRuns
-    Overs()
+    // Overs()
     saveData()
     update()
     if(clickOvers == maxOver|| clickWickets == 10){
