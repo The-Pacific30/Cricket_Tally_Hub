@@ -21,7 +21,8 @@ function inning(){
         document.querySelector('.total-clickRuns').textContent = clickRuns
         document.querySelector('.total-clickWickets').textContent = clickWickets
         document.querySelector('.total-overs').textContent = clickOvers.toFixed(1)
-        document.querySelector('.total-clickBalls').textContent = clickBall
+        // document.querySelector('.total-clickBalls').textContent = clickBall
+        document.querySelector('.target').textContent = "target: " + firstScore
     }
     else{
         const previousState = history[history.length - 1]
