@@ -10,7 +10,7 @@ function runClick(runvalue)
     Overs()
     saveData()
     update()
-    if(clickOvers > maxOver|| clickWickets == 10){
+    if(clickOvers == maxOver|| clickWickets == 10){
         inning()
     }
     }
