@@ -41,7 +41,10 @@ header h4 {
     display: flex;
     flex-direction: column;
 }
-#team,#overs {
+/* #team,#overs {
+    margin-bottom: 20px;
+} */
+#visitorteam,#maxOver{
     margin-bottom: 20px;
 }
 #overs p {

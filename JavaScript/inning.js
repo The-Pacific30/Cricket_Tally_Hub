@@ -6,8 +6,8 @@ function inning(){
         firstWicket = previousState.clickWickets
         console.log(firstScore)                                  //debugging
         document.getElementById("inning").value = "End Inning"
+        
         const storedHostName = localStorage.getItem("visitorname")
-
         if (storedHostName) {
             document.getElementById("batting").textContent = storedHostName
         }
@@ -21,8 +21,9 @@ function inning(){
         document.querySelector('.total-clickRuns').textContent = clickRuns
         document.querySelector('.total-clickWickets').textContent = clickWickets
         document.querySelector('.total-overs').textContent = clickOvers.toFixed(1)
-        document.querySelector('.target').textContent = "Target - " + firstScore
-    }   
+        // document.querySelector('.total-clickBalls').textContent = clickBall
+        document.querySelector('.target').textContent = "Target: " + firstScore
+    }
     else{
         const previousState = history[history.length - 1]
         secondScore = previousState.clickRuns
@@ -31,24 +32,30 @@ function inning(){
 
         if(firstScore > secondScore){
             maxScore = firstScore
+            scoreDifference = firstScore - secondScore
             localStorage.setItem("maxScore", maxScore)
             localStorage.setItem("Wicket", firstWicket)
             const teamName = localStorage.getItem("hostname")
             localStorage.setItem("teamName",teamName)
+            localStorage.setItem("scoreDifference",scoreDifference)
         }
         else if(firstScore === secondScore){
             maxScore = firstScore
+            scoreDifference = secondScore - firstScore
             localStorage.setItem("maxScore",firstScore)
             localStorage.setItem("Wicket", firstWicket)
             const teamName = localStorage.getItem("matchtied")
             localStorage.setItem("teamName", teamName)
+            localStorage.setItem("scoreDifference",scoreDifference)
         }
         else{
             maxScore = secondScore
+            scoreDifference = secondScore - firstScore
             localStorage.setItem("maxScore", maxScore)
             localStorage.setItem("Wicket", secondWicket)
             const teamName = localStorage.getItem("visitorname")
             localStorage.setItem("teamName",teamName)
+            localStorage.setItem("scoreDifference",scoreDifference)
         }
         
         window.location.href = 'declare.html'
