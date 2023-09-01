@@ -39,3 +39,12 @@
     white-space: nowrap;
     text-overflow: ellipsis; 
 }
+#playbutton .playbutton{
+    align-items: center;
+    font-size:large;
+    margin: 10% 30%;
+    background-color: rgb(37, 231, 95);
+    color: rgb(0,0,0);
+    border-radius: 5%;
+    padding:10px;
+}
