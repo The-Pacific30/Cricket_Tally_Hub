@@ -88,6 +88,10 @@ function update() {
 }
 
 function Undo() {
+    if(clickRuns == 0 && clickWickets == 0){
+        alert("Nothing is scored to undo")
+    }
+    else{
     console.log("undoooooo")
     if (history.length > 0){
         history.pop()
@@ -96,7 +100,7 @@ function Undo() {
         clickWickets = previousState.clickWickets
         clickOvers = previousState.clickOvers
         update()
-    }
+    }}
 }
 
 if (typeof(Storage) !== "undefined") {
