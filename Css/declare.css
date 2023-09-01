@@ -11,24 +11,29 @@
     margin-top:30vh;
     border:solid 5px rgb(88, 233, 131);
 }
-#declareform .declareform div{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-}
-#declareform .declareform h1{
-    background-color: rgb(255, 255, 255);
-}
 #declareform .declareform{
     max-width: 70%;
     margin: auto;
-    background-color: rgb(255, 255, 255);
-}
-#declareform .declareform div span{
-    font-size:x-large;
     background-color: rgb(255, 255, 255);
 }
 #declareform .declareform .img img{
     align-items: center;
     margin: 0% 25%;
     background-color: rgb(255, 255, 255);
+}
+#declareform .declareform div{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+#declareform .declareform .winteam h1{
+    background-color: rgb(255, 255, 255);
+}
+#declareform .declareform .winteam h1 span{
+    font-size: x-large;
+    background-color: rgb(255, 255, 255);
+}
+#declareform .declareform .winTeamName{
+    width:50vw;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
