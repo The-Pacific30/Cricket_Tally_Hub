@@ -28,9 +28,9 @@ function noBallClick()
         break
         default :
         alert("Enter valid runs")
-        clickOvers = clickOvers - 0.1
+        // clickOvers = clickOvers - 0.1
     }
-    clickBall = clickBall + 1
+    // clickBall = clickBall + 1
     document.querySelector('.total-clickRuns').textContent = clickRuns
     // Overs()
     saveData()
