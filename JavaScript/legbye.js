@@ -3,10 +3,14 @@ function lbClick()
     const maxOver = localStorage.getItem('maxOver')
     if(clickOvers<=maxOver && clickWickets<10){
     var bye = prompt("Hello Umpire This is bye/legbye" , "1")
-    if(parseInt(bye)>5){
+    if(parseInt(bye)<0 || parseInt(bye)>5){
         alert("Enter valid runs")
     }else{
         clickRuns = clickRuns+parseInt(bye);
+        Overs()
+        clickBall = clickBall + 1
+        saveData()
+        update()
     }
     // switch(parseInt(bye))
     // {
@@ -33,11 +37,7 @@ function lbClick()
     //     // clickOvers = clickOvers - 0.1
     // }
     // clickOvers = clickOvers - 0.1
-    clickBall = clickBall + 1
     document.querySelector('.total-clickRuns').textContent = clickRuns
-    Overs()
-    saveData()
-    update()
     if(clickOvers == maxOver){
         inning()
     }
